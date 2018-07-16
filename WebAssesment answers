@@ -1,0 +1,514 @@
+Demo easy1  = 10
+
+Bigger Everytime = foo++
+
+ChangingTheStart = foo+"Bar"
+
+DoubleEveryTIme = foo+=foo
+
+Scoping =  x+1
+
+SearchOnline = 0x1.fffffeP+127f
+
+Simple = 0.5
+
+SimpleHard = 1
+
+Infinity+ = 1.0f / 0.0f
+
+Infinity- = -1.0 / 0.0f
+
+FloatsAreSurpising = 0.0f/0.0f
+
+MyMax =      float max; 
+            if(elems.size() == 1) return elems.get(0);
+            else{
+            max = elems.get(0);
+            }
+
+            for(float f : elems){
+            if(f > max) max = f;
+            }
+
+            return max;
+
+Interface1 = implements
+
+Interface2 = extends
+
+Interface3 = super
+
+extends1 = B(){
+            Super("Cell");
+            }
+            
+extends2 = static int instanceCount = 0;
+            B() {
+                super(instanceCount++ % 2 == 0 ? "name1" : "name2");
+                }
+                
+Field1 = this.f = f;
+
+Field2 = super.setF(-f);
+
+Symbolic1 = 203
+
+Symbolic2 = 9
+
+Symbolic3 = 4
+
+Poly1 = 456
+
+Poly2 = Parent()
+
+Poly3 = public String name(boolean b);
+
+        public String name(int i);
+        
+Poly4 = "Child String"
+
+Poly5 = if(o.equals(this))return false;
+        return true;
+        
+Poly6 = public boolean isEatenBy(Dog o){
+      if(o.isLittle()){
+        return false;
+          }
+            return true;  }
+            
+Poly7 = Animal
+
+Poly8 = "[Bob bites Jim, Jim claws back Bob]"
+
+Poly9 = "[Bob bites jim, Jim claws back Bob]"
+
+ManyM1 = new String("asda")
+
+ManyM2 = new A(), new A()
+
+ManyF = new B(), new A()
+
+ManyMF = new B(), new A()
+
+MyPow = return (int)Math.pow(base,exp);
+
+MyAverage =         float count = 0; 
+                    for(float f : elems){
+
+                            count+= f; 
+                    }
+                    float getAverage = count / elems.size();
+
+                    return getAverage;
+Concat =            String ss = "[";
+
+                    for(String s: that){
+                        ss += s;
+                    }
+ 
+                    return ss + "]";
+                    
+Longest String =    if(that.size() == 0){
+                    throw new java.util.NoSuchElementException();
+                    }
+
+                    String longest = "";
+                    int i = 0;
+
+                    for(String s : that){
+                    if(s.length() > i){
+                    i = s.length();
+                    longest = s;
+                    }
+                    }
+
+                    return longest;
+UseFindMax1 =   float max = findMax(that);
+
+                that.remove(max);
+UseFindMax2 =   float max = findMax(that);
+
+                ArrayList<Float> a = new ArrayList<>();
+
+                for(float f : that){
+
+                if( f < max){
+                a.add(f);
+                }
+
+                }
+
+                return a;
+                
+IntegerList =   elems.add(0,10);
+                elems.add(1,50);
+                elems.add(2,70);
+                elems.add(3,20);
+                
+SingleMiscKey = private
+
+Person1 =   class Person{
+
+            String name; 
+            int age;
+
+            public Person(String name,int age){
+            this.name = name;
+            this.age = age;
+
+
+            }
+
+            @Override 
+            public String toString(){
+            return name+":"+age;
+            }
+
+            }
+            
+Person 2 =  class Person{
+            String name;
+            int age;
+
+            public Person(String name, int age){
+            if(age < 0 || name.equals(""))
+            throw new IllegalArgumentException();
+
+            this.name = name;
+            this.age = age;
+
+            }
+
+            public String toString(){
+            return name+":"+age;
+            }
+
+            }
+
+GoodToKnow = finally{return 0;}
+
+Declaring1 = java.lang.ArrayIndexOutOfBoundsException
+
+Declaring2 = throws EmptyArrayException
+
+Declaring3 = throws EmptyArrayException
+
+AfterTry = catch(Exception e){}
+
+MakeADifference = throw new Exception();
+
+Generics 1 = T
+Generics 2 = extends
+Generics 3 = <S,T>
+Generics 4 = extends String
+Generics 5 = <T extends String>
+Generics 6 = & Father
+Generics 7 = Animal
+Generics 8 = super
+
+Generic Template1 = return Math.min(e1,e2);
+
+
+Generic Template2 = 
+			Student better(Student e1, Student e2) {
+		
+			if(e1.height<=e2.height){
+					return e2;
+			}else{
+					return e1;
+			}
+		}
+		
+Generic Template3 = 
+Student better(Student e1, Student e2) {
+		if(e1.name.compareTo(e2.name)>0){
+			return e1;
+		}else if(e1.name.compareTo(e2.name)<=0){
+			return e2;
+		}else{
+			return e1;
+		}
+	}
+	
+Generic template4 = 
+class B extends A<Student>{
+Student better(Student e1, Student e2) {
+		if(e1.averageMark>=e2.averageMark){
+			return e1;
+		}else {
+			return e2;
+		}
+	}
+}
+
+Generic template5 = 
+class Person {
+	String name,address;
+	public Person(String name, String address) {
+		this.name = name;
+		this.address = address;
+	}
+
+}
+
+class B extends A<Person>{
+	@Override
+	Person better(Person e1, Person e2) {
+		if(e1.address.length()<=e2.address.length()){
+			return e1;
+		}else{
+			return e2;
+		}
+		
+	}
+
+}
+
+
+Generic template 6 = 
+class B extends A<Student>{
+	int target;
+
+	public B(int target) {
+		this.target = target;
+	}
+
+	@Override
+	Student better(Student e1, Student e2) {
+		if(e1.averageMark-target<=e2.averageMark-target){
+			return e1;
+		}else{
+			return e2;
+		}
+		
+	}
+}
+
+Generics PointVsColPoint = 
+public static ColPoint min(ColPoint c1,Point c2){
+	return c1;
+}
+
+Generics AQpplicableMethod = 
+( List<? extends Object> sl) {
+	  StringBuilder sb = new StringBuilder();
+
+	  for(Object a:sl){
+		  sb.append(a);
+		  
+	  }
+	  return sb.toString();
+  }
+  
+ Generics Map1 = 
+ int mostPop = 0;
+		String mostPopCity = "";
+		if(that.isEmpty()){
+			throw new java.util.NoSuchElementException();
+		}
+		for(String key : that.keySet() ){
+			if(that.get(key) >= mostPop){
+				mostPop = that.get(key);
+				mostPopCity = key;
+			}
+		}
+		return mostPopCity;
+		
+Generics Map2 = 
+List<String> city = new ArrayList<String>();
+
+			while(!that.isEmpty() ){
+				city.add(findMostPopulated(that));
+				that.remove(findMostPopulated(that));
+			}
+			return city;
+		    
+Generics completethiscode1 = 
+class CustomList<T> {
+	java.util.List<T> list;
+
+	CustomList() {
+		list = new java.util.ArrayList<T>();
+	}
+
+	public void add(T elem) {
+		list.add(elem);
+	}
+
+	public boolean popLast() {
+		if (list == null || list.isEmpty()) {
+			return false;
+		}
+		list.remove(list.size()-1);
+		return true;
+	}
+
+	public T first() {
+		if (list == null || list.isEmpty()){
+			return null;
+		}
+		return list.get(0);
+	}
+
+	public T last() {
+		if (list == null || list.isEmpty()){
+			return null;
+		}
+		return list.get(list.size()-1);
+	}
+
+	public boolean isEmpty() {
+		return (list.isEmpty()) ? true : false;
+	}
+
+}
+
+
+Equality Contracts bedifferent =  new String()
+
+Equality Time 1 - 4 = 
+public Time24 add1Hour(){
+		int h = this.hours+1;
+		h = h%24;
+		return new Time24(this.seconds, this.minutes, h);
+	}
+	
+	public Time24 remove1Hour(){
+		int h = this.hours-1;
+		if (h<0) { h = 23; }
+		return new Time24(this.seconds, this.minutes, h);
+	}
+	
+	public Time24 add1Minute(){
+		int m = this.minutes+1;
+		if (m>59) { m = 0; return (new Time24(this.seconds, m, this.hours)).add1Hour(); }
+		return new Time24(this.seconds, m, this.hours);
+	}
+	
+	public Time24 remove1Minute(){
+		int m = this.minutes-1;
+		if (m<0) { m = 59; return new Time24(this.seconds, m, this.hours).remove1Hour(); }
+		return new Time24(this.seconds, m, this.hours);
+	}
+	
+	public Time24 add1Second(){
+		int s = this.seconds+1;
+		if (s>59) { s = 0; return new Time24(s, this.minutes, this.hours).add1Minute(); }
+		return new Time24(s, this.minutes, this.hours);
+	}
+	
+	public Time24 remove1Second(){
+		int s = this.seconds-1;
+		if (s<0) { s = 59; return new Time24(s, this.minutes, this.hours).remove1Minute(); }
+		return new Time24(s, this.minutes, this.hours);
+	}
+	
+
+Equality Time 5 = 
+public Time12 add1Hour(){
+  int h;
+  Boolean isPm = this.isPm;
+    if(this.hours == 12){
+		isPm = !isPm;
+    h = 1;}
+		else{ h = this.hours+1;}
+		return new Time12(this.seconds, this.minutes, h, isPm);
+	}
+	
+	public Time12 remove1Hour(){
+    Boolean ism = this.isPm;
+    int h = this.hours-1;
+		if (h<1) { h = 12; ism = !ism; }
+		return new Time12(this.seconds, this.minutes, h, ism);
+	}
+	
+	public Time12 add1Minute(){
+		int m = this.minutes+1;
+		if (m>59) { m = 0; return (new Time12(this.seconds, m, this.hours, this.isPm)).add1Hour(); }
+		return new Time12(this.seconds, m, this.hours, this.isPm);
+	}
+	
+	public Time12 remove1Minute(){
+		int m = this.minutes-1;
+		if (m<0) { m = 59; return new Time12(this.seconds, m, this.hours, this.isPm).remove1Hour(); }
+		return new Time12(this.seconds, m, this.hours, this.isPm);
+	}
+
+	public Time12 add1Second(){
+		int s = this.seconds+1;
+		if (s>59) { s = 0; return (new Time12(s, this.minutes, this.hours, this.isPm)).add1Minute(); }
+		return new Time12(s, this.minutes, this.hours, this.isPm);
+	}
+	
+	public Time12 remove1Second(){
+		int s = this.seconds-1;
+		if (s<0) { s = 59; return (new Time12(s, this.minutes, this.hours, this.isPm)).remove1Minute(); }
+		return new Time12(s, this.minutes, this.hours, this.isPm);
+	}
+	
+	
+Equality Contracts boolean 1 - 4 = p1.equals(p2)
+
+Equality Contracts Equals 1 - 3 = 
+public boolean equals(Point p) {
+ return this.x == p.x && this.y == p.y;
+ }
+
+ 
+Puzzlers SQLINJECTIONS = ".substring(0, 0) + "Foo
+Puzzlers plusfour = (foo+=4)
+puzzlers isthispossible? = null
+puzzlers range1 = int i = 2147483647;
+puzzlers rangeblocked = 
+	int ONE = "x".length();
+	int i = -ONE >>> ONE;
+
+instance 1 = new A()
+instance 2 = 
+	new A(){
+		int m(){
+		return 2;
+		}
+}
+
+NestedSyntax1 = new A.C(new A.B())
+NestedSyntax2 = new A.B.C(new A.B())
+NestedSyntax3 = new A.C(null)
+NestedSyntax4 = new A().new C()
+NestedSyntax5 = 
+
+CollectionSort = new Comparator<Point>(){
+
+		@Override
+		public int compare(Point o1, Point o2) {
+			
+			if(o1.x<o2.x){
+				return -1;
+			}else if(o1.x==o2.x){
+				if(o1.y<o2.y){
+					return -1;
+				}else if(o1.y==o2.y){
+					return 0;				}
+			}else{
+				return 1;
+			}
+			return 0;
+		}
+}
+
+Arrayutil.format 1 = "[","]",", "
+Arrayutil.format 2 = 
+new ArrayUtil(){
+   	{super.separator = "; ";
+   		}
+   	
+  }
+Arrayutil.format 3 = {super.separator = "; ";}
+
+
+
+
+
+		
+		
+
